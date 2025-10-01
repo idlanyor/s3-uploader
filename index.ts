@@ -19,7 +19,7 @@ const bucketName = process.env.S3_BUCKET_NAME || 'kanata-s3';
 
 const app = new Elysia()
   .use(swagger({
-    provider: 'swagger-ui',
+    path: '/swagger',
     documentation: {
       info: {
         title: 'S3 Uploader API',
@@ -38,8 +38,7 @@ const app = new Elysia()
         {
           url: 'http://localhost:3020',
           description: 'Development server'
-        },
-
+        }
       ],
       tags: [
         { name: 'Upload', description: 'File upload operations' },
