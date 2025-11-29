@@ -33,7 +33,7 @@ const app = new Elysia()
         },
         {
           url: 'https://s3.kanata.web.id',
-          description: 'Frankfurt(Backend)'
+          description: 'Kansas City(Backup)'
         },
         {
           url: 'http://localhost:3020',
